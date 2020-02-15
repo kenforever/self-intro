@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Nunito');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC','Nunito','Microsoft JhengHei',sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+#top-hr {
+    width: 150px;
+    margin: 60px auto;
+    border-top: 3px solid#0f4c81;
+}
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #011001
+}
+
+.button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.container {
+    color:#24292e;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    max-width: 664px;
+    padding: 0 20px 40px 20px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+p {
+    font-size: 15px;
+    
+}
+
+.container p {
+    margin: 30px auto;
+}
+
+#avatar {
+    border-radius: 60px;
+}
+
+#avatar, .header-image {
+    max-width: 120px;
+    max-height: 120px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: left;
+    height: 120px;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 0 30px;;
+}
+
+.card h1 {
+    font-weight: 700;
+    font-size: 28px;
+    padding-top: 25px; 
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 110px;
+    z-index: 1;
+}
+
+.footer {
+    background-color: #0B1013;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    text-align: center;
+}
+
+.footer-text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-text p {
+    margin: 10px auto;
+    color: #636363;
+}
+
+.card a {
+    color: #ffffff;
+
+}
+
+.article {
+    text-align: left;
+}
+
+.article p {
+    margin: 30px auto;
+}
+
+
+.project_card {
+    border-style: solid;
+    border-color: #0f4c81;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: left;
+    height: 120px;
+    max-width: 720px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 30px;;
+}
+
+.project_card p {
+    margin: 0;
+    color: #808080;
+}
+
+.project_card h1 {
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 20px; 
+    color: #4b0082;
+    border-bottom: 1px solid#4b0082;
+}
+#particles-js {
+    width: 100%;
+    height: 90%;
+    margin:0px;
+    padding:0px;
+    background-color: #fff;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+  }
+
+ul {
+    padding-left: 15px;
+    line-height: 30px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    list-style-type: square;
+    color: black;
+}
+ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+}
+  
+

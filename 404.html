@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>此頁面不存在</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://kenforever.cc/css/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+		<div id="particles-js"></div>
+            <script src="https://kenforever.cc/js/particles.js"></script>
+            <script type="text/javascript" src="https://kenforever.cc/js/app.js"></script>
+            <header>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="https://kenforever.cc">HOME</a></li>
+                        <li><a href="https://kenforever.cc/about">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <h1>你要的頁面目前不存在喔!</h1>
+            </div>
+            <div class="footer">
+                <div class="footer-text">
+                    <p>Coded and deployed from scratch by Kenforever. </p>
+
+<div style="color: #636363;">
+<span id="timeDate">載入天數...</span><span id="times">載入時分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("09/13/2019 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已運行了 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小時 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+              <p id="footer-copyright">©2019 Kenforever</p></div>
+            </div> 
+    </body>
+</html>

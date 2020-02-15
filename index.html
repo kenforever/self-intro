@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kenforever</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+
+
+	</head>
+    <body>
+    </div>
+    
+        <div class="wrapper">
+            <div id="particles-js"></div>
+            <script src="js/particles.js"></script>
+            <script type="text/javascript" src="js/app.js"></script>
+        <header>
+            <nav>
+                <div class="vnb__menu-options vnb__menu-options--left"></div>
+                <ul class="nav_links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="container">
+            <img id="avatar" alt="avatar" src="img/icon.jpg">
+            <h1>Kenforever</h1>
+            <p>澳門高三學生 / VS Code 喜愛者 / 攝影 / manjaro+Windwos使用中</p>
+            <hr id="top-hr">
+
+            <div  class="card">
+                <a href="https://Github.com/kenforever">
+                <h1>Github</h1>
+                <div>我做過的項目都在這裏</div>
+                </a>
+            </div>
+
+	    <div class="card" style="background-color:#3aae98">
+		    <a href="https://kenforever.cc/3dtool/">
+			    <h1>ken的工具房</h1>
+			    <div>記錄四校的一些資料</div>
+		    </a>
+	    </div>
+
+    </div>
+        <div class="footer">
+            <div class="footer-text">
+                <p>Coded and deployed from scratch by Kenforever.</p>
+
+<div style="color: #636363;">
+<span id="timeDate">載入天數...</span><span id="times">載入時分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("09/13/2019 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已運行了 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小時 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+          <p id="footer-copyright">©2019 Kenforever</p></div>
+        </div> 
+    </div>
+    </body>
+</html> 
