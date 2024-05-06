@@ -1,0 +1,58 @@
+{
+    "Laptop": {
+      "items": [
+        "Microsoft Surface Pro 8 16+256",
+        "Apple Macbook Air m2 16+512"
+      ],
+      "color": "teal"
+    },
+    "Desktop": {
+      "items": [
+        "Intel Core I7-11700",
+        "msi RX 6700 XT MECH 2X 12G OC",
+        "ballistix ddr4 3200 16GB*2",
+        "solidigm p44 pro 2TB",
+        "WD SN750"
+      ],
+      "color": "red"
+    },
+    "Home Server": {
+      "items": [
+        "HPE ProLiant MicroServer Gen 10 plus",
+        "Intel Xeon E-2224",
+        "HPE 16GB DDR4-2666 ECC UDIMM",
+        "Seagate Exos 7E10 10TB",
+        "Crucial MX500 SSD 2TB"
+      ],
+      "color": "yellow"
+    },
+    "Camera": {
+      "items": [
+        "Sony α7 IV",
+        "Sony FE 24-105 mm F4 G OSS",
+        "TAMRON 17-28mm F/2.8 DiIII RXD"
+      ],
+      "color": "blue"
+    },
+    "Phone": {
+      "items": [
+        "Sony Xperia 1 V",
+        "iPhone 13 mini"
+      ],
+      "color": "purple"
+    },
+    "Accessories": {
+      "items": [
+        "Rode podmic",
+        "YAMAHA AG06",
+        "Acer XV272U KV",
+        "benq ScreenBar Halo",
+        "nintendo switch OLED",
+        "Sony SRS-XB23*2",
+        "YAMAHA YH-L700A",
+        "mikrotik hap ac 2",
+        "samsung watch 6"
+      ],
+      "color": "green"
+    }
+  }

@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css?family=Lato:regular,bold,italic&subset=latin,latin-ext');
 body {
   
 font-family: Lato, Noto Sans TC, sans-serif;
 }
+
+
