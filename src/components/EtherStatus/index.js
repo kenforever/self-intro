@@ -8,6 +8,7 @@ const rpc = {
   arb: "https://arb1.arbitrum.io/rpc",
   linea: "https://rpc.linea.build",
   zksync: "https://mainnet.era.zksync.io",
+  base: "https://mainnet.base.org",
 };
 
 const address = "0xda15a089ce396c50fdc1c01afdb97c90ca9b0e68";
@@ -22,6 +23,7 @@ const EtherStatus = () => {
   const [arbBalance, setArbBalance] = useState(0);
   const [lineaBalance, setLineaBalance] = useState(0);
   const [zksyncBalance, setZksyncBalance] = useState(0);
+  const [baseBalance, setBaseBalance] = useState(0);
   const [totalBalance, setTotalBalance] = useState(0);
   const [ETHUSD, setETHUSD] = useState(0);
   const [USDTWD, setUSDTWD] = useState(0);
@@ -110,6 +112,15 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setZksyncBalance(hexToEther(data.result));
+          setTotalBalance((prev) => prev + hexToEther(data.result));
+        })
+        .catch((error) => {
+          console.log("error", error);
+        });
+      fetch(rpc.base, requestOptions)
+        .then((response) => response.json())
+        .then((data) => {
+          setBaseBalance(hexToEther(data.result));
           setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
@@ -389,6 +400,58 @@ const EtherStatus = () => {
           </div>
         </div>
         <div className="rounded-full border w-100 border-gray-200  justify-center mx-auto mb-2"></div>
+
+        <div className="flex justify-between ">
+          <div className="flex ">
+            {/* <img
+              src="/ethereum-logo.svg"
+              alt="ethereum-logo"
+              className="h-10 my-auto pl-2 "
+            /> */}
+            <div className="text-lg font-bold py-6 pr-8 pl lg:text-xl">
+              Base
+            </div>
+          </div>
+          <div className="flex ">
+            <div className="text-lg font-semibold py-6 pr-4 md:px-8">
+              {startCount && (
+                <CountUp
+                  end={baseBalance}
+                  decimals={baseBalance ? 6 : 0}
+                  duration={1.5}
+                  delay={0.5}
+                />
+              )}{" "}
+              ETH{" "}
+            </div>
+            <div className="hidden lg:block border-l border-gray-400 font-semibold h-2/3 my-auto rounded-full"></div>
+            <div className="hidden lg:block text-lg font-semibold md:py-6 md:px-8">
+              {startCount && (
+                <CountUp
+                  start={0}
+                  end={baseBalance * ETHUSD}
+                  decimals={baseBalance ? 2 : 0}
+                  delay={0.5}
+                  duration={1.5}
+                />
+              )}
+              {" USD"}
+            </div>
+            <div className="hidden lg:block border-l border-gray-400 font-semibold h-2/3 my-auto rounded-full"></div>
+            <div className="hidden lg:block text-lg font-semibold md:py-6 md:px-8">
+              {startCount && (
+                <CountUp
+                  start={0}
+                  end={baseBalance * ETHUSD * USDTWD}
+                  decimals={baseBalance ? 2 : 0}
+                  delay={0.5}
+                  duration={1.5}
+                />
+              )}
+              {" TWD"}
+            </div>
+          </div>
+        </div>
       </div>
   );
 };

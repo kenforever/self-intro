@@ -6,6 +6,7 @@ import {
   FaArrowDown,
   FaFacebook,
   FaInstagram,
+  FaBlog,
 } from "react-icons/fa";
 import { SiMisskey } from "react-icons/si";
 
@@ -46,6 +47,12 @@ function App() {
               className="flex items-center justify-center md:justify-start "
             >
               <FaTwitter size={20} />
+            </a>
+            <a
+              href="https://nya.one/@kenforever"
+              className="flex items-center justify-center md:justify-start "
+            >
+              <SiMisskey size={20} />
             </a>
             <a
               href="mailto:ken@kenforever.cc"
@@ -191,7 +198,7 @@ function App() {
             </h2>
             <div className="rounded-full border w-64 border-indigo-200 justify-center mx-auto mb-2"></div>
           </div>
-          <div className="flex items-center justify-evenly mx-0 flex-wrap md:mx-80">
+          <div className="flex items-center justify-evenly mx-0 flex-wrap gap-x-2 ">
             <button
               className="flex items-center justify-center my-2 rounded-lg p-8 md:w-40 bg-slate-200/80 hover:bg-slate-200 text-slate-900"
               onClick={() =>
@@ -226,6 +233,15 @@ function App() {
               }
             >
               <SiMisskey size={40} />{" "}
+            </button>
+
+            <button
+              className="flex items-center justify-center my-2 rounded-lg p-8 md:w-40 bg-slate-200/80 hover:bg-slate-200 text-slate-900"
+              onClick={() =>
+                window.open("https://blog.kenforever.cc", "_blank")
+              }
+            >
+              <FaBlog size={40} />{" "}
             </button>
           </div>
         </div>
