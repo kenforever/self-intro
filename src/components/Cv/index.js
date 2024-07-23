@@ -22,7 +22,7 @@ return (
             <div className="flex justify-center space-x-4">
                 <button
                     className="my-2 rounded-lg p-2 px-8 bg-slate-200/80 hover:bg-slate-200 text-slate-900 flex items-center justify-center"
-                    onClick={() => window.open("/cv.pdf", "_blank")}
+                    onClick={() => window.open("/ken_leong_cv.pdf", "_blank")}
                 >
                     <FaEye className="mx-2 my-auto"/>
                     view
