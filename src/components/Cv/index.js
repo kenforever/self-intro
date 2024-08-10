@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { FaEye, FaFileDownload } from "react-icons/fa";
 
@@ -9,7 +8,7 @@ return (
     <>
         <div className="">
             <div className="mx-auto w-min">
-                <Document file="/cv.pdf">
+                <Document file="/ken_leong_cv.pdf">
                     <Page
                         pageNumber={1}
                         renderAnnotationLayer={false}

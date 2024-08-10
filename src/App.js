@@ -111,22 +111,28 @@ function App() {
                 url="https://ikaho.world"
               />
               <Experience
-                title="contributor"
+                title="Core Contributor"
                 place="XueDAO"
                 time="2024 ~ present"
                 url="https://xuedao.xyz/"
               />
               <Experience
-                title="student"
+                title="Student"
                 place="Plan B summer school"
                 time="2023 Summer"
                 url="https://planb.lugano.ch/summer-school/"
               />
               <Experience
-                title="panel speaker"
+                title="Panel Speaker"
                 place="Taiwan Builder house"
                 time="2023 Summer"
                 url="https://www.taiwanbuilderhouse.com/"
+              />
+              <Experience
+                title="Speaker"
+                place="COSCUP Blockchain track"
+                time="2024 Summer"
+                url="https://coscup.org/2024/en/session/BZKVMC"
               />
             </div>
           </div>
