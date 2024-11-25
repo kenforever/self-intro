@@ -9,7 +9,7 @@ import {
   FaBlog,
 } from "react-icons/fa";
 import { SiMisskey } from "react-icons/si";
-
+import Clarity from '@microsoft/clarity';
 import Equipment from "./components/Equipment";
 import EtherStatus from "./components/EtherStatus";
 
@@ -18,6 +18,10 @@ import Experience from "./components/Experience";
 import Cv from "./components/Cv";
 
 function App() {
+
+const projectId = "mbh9q56wxl"
+
+Clarity.init(projectId);
 
   return (
     <div className="App">
