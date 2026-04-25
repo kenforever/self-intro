@@ -4,7 +4,7 @@ import { Waypoint } from "react-waypoint";
 
 const rpc = {
   eth: "https://rpc.flashbots.net",
-  op: "https://optimism.llamarpc.com",
+  op: "https://optimism-rpc.publicnode.com",
   arb: "https://arb1.arbitrum.io/rpc",
   linea: "https://rpc.linea.build",
   zksync: "https://mainnet.era.zksync.io",

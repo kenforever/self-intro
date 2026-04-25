@@ -36,8 +36,7 @@ Clarity.init(projectId);
             Kenforever
           </h1>
           <h2 className="text-xl mx-auto md:mx-0 text-center md:text-left">
-            Blockchain | EVM | Solidity | DevOps | Python | Linux | Photograph |
-            +853 & +886
+            DevOps | Python | Linux | ML Infra | Photograph | Blockchain | EVM | Solidity | +853 & +886
           </h2>
           <div className="flex items-center justify-center md:justify-start space-x-4 mt-6">
             <a
@@ -87,11 +86,9 @@ Clarity.init(projectId);
             <div className="rounded-full border w-64 border-indigo-200 justify-center mx-auto mb-2"></div>
             <div className="md:flex md:flex-wrap md:justify-evenly mx-0 2xl:mx-64 justify-center text-center">
               <p className="text-md tracking-wider leading-relaxed">
-                Hi! 我目前專注於 EVM 生態的開發和研究，但也有興趣於其他生態，如
-                BTC, Solana, Cosmos 等。
+                Hi! 我目前專注於 DevOps 與基礎設施領域，從 bare metal、VM、Docker、K8s 到 serverless 都實際操作過。同時也涉足 ML infra、前後端開發，以及系統架構設計，習慣以一人之力獨立維運整個生產環境。
                 <br />
-                除了區塊鏈，我也對 DevOps 和 AI 相當感興趣，對 Linux, Docker,
-                GCP 等都有一定經驗。
+                此前也曾在 EVM, BTC 和 Cosmos 等各種區塊鏈生態研究與開發。
               </p>
             </div>
           </div>
@@ -103,10 +100,10 @@ Clarity.init(projectId);
             <div className="rounded-full border w-64 border-indigo-200 justify-center mx-auto mb-2"></div>
             <div className="md:flex md:flex-wrap justify-evenly mx-0 2xl:mx-64  text-center">
               <Experience
-                title="社長"
-                place="北科大區塊鏈研究社"
-                time="2023 ~ 2024"
-                url="https://ntutblockchain.com"
+                title="DevOps engineer"
+                place="神農氏"
+                time="2024 ~ present"
+                url="https://shennongshi.ai"
               />
               <Experience
                 title="運維"
@@ -121,6 +118,18 @@ Clarity.init(projectId);
                 url="https://xuedao.xyz/"
               />
               <Experience
+                title="Speaker"
+                place="COSCUP Blockchain track"
+                time="2024 Summer"
+                url="https://coscup.org/2024/en/session/BZKVMC"
+              />
+              <Experience
+                title="社長"
+                place="北科大區塊鏈研究社"
+                time="2023 ~ 2024"
+                url="https://ntutblockchain.com"
+              />
+              <Experience
                 title="Student"
                 place="Plan B summer school"
                 time="2023 Summer"
@@ -132,12 +141,7 @@ Clarity.init(projectId);
                 time="2023 Summer"
                 url="https://www.taiwanbuilderhouse.com/"
               />
-              <Experience
-                title="Speaker"
-                place="COSCUP Blockchain track"
-                time="2024 Summer"
-                url="https://coscup.org/2024/en/session/BZKVMC"
-              />
+
             </div>
           </div>
 
@@ -257,7 +261,7 @@ Clarity.init(projectId);
         </div>
       </div>
       <div className="pt-10 pb-6 max-w-100 flex justify-evenly mx-0 2xl:mx-64">
-        <div>BUIDL with web3 @2024</div>
+        <div>BUIDL with web3 @2026</div>
       </div>
     </div>
   );
