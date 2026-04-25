@@ -24,7 +24,6 @@ const EtherStatus = () => {
   const [lineaBalance, setLineaBalance] = useState(0);
   const [zksyncBalance, setZksyncBalance] = useState(0);
   const [baseBalance, setBaseBalance] = useState(0);
-  const [totalBalance, setTotalBalance] = useState(0);
   const [ETHUSD, setETHUSD] = useState(0);
   const [USDTWD, setUSDTWD] = useState(0);
 
@@ -33,23 +32,23 @@ const EtherStatus = () => {
     setStartCount(true);
   };
 
-  const query_raw = JSON.stringify({
-    method: "eth_getBalance",
-    params: [address, "latest"],
-    id: 1,
-    jsonrpc: "2.0",
-  });
-
-  const requestOptions = {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: query_raw,
-    redirect: "follow",
-  };
-
   useEffect(() => {
+    const query_raw = JSON.stringify({
+      method: "eth_getBalance",
+      params: [address, "latest"],
+      id: 1,
+      jsonrpc: "2.0",
+    });
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: query_raw,
+      redirect: "follow",
+    };
+
     const fetchPrice = async () => {
       fetch(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum"
@@ -72,7 +71,6 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setEthBalance(hexToEther(data.result));
-          setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
           console.log("error", error);
@@ -82,7 +80,6 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setOpBalance(hexToEther(data.result));
-          setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
           console.log("error", error);
@@ -92,7 +89,6 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setArbBalance(hexToEther(data.result));
-          setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
           console.log("error", error);
@@ -102,7 +98,6 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setLineaBalance(hexToEther(data.result));
-          setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
           console.log("error", error);
@@ -112,7 +107,6 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setZksyncBalance(hexToEther(data.result));
-          setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
           console.log("error", error);
@@ -121,7 +115,6 @@ const EtherStatus = () => {
         .then((response) => response.json())
         .then((data) => {
           setBaseBalance(hexToEther(data.result));
-          setTotalBalance((prev) => prev + hexToEther(data.result));
         })
         .catch((error) => {
           console.log("error", error);
